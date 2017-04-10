@@ -5,9 +5,9 @@ body, html {
     width: 100%;
     background-color: white;
     margin: 0 auto;
-    min-width:500px;
+    min-width:320px;
     max-width:2000px;
-    font:1em 'Open Sans', sans-serif;
+    font:1.01em 'Open Sans', sans-serif;
     
 }
 h3, h2, p {
@@ -20,6 +20,7 @@ h3, h2, p {
     background-color:#222;
     height: 110px;
     color: #fff;
+    
 }
 
 .nav-main .logo {
@@ -33,6 +34,8 @@ h3, h2, p {
     padding:0;
     float:right;
     list-style-type:none;
+    min-width:600px;
+    max-width:2000px;
 }
 
 .nav-main > ul > li {
@@ -51,19 +54,21 @@ h3, h2, p {
     background-color:#444;
     color:#E18700;
 }
+.form {
+    width:300px;
+}
 
 /*-----------------------------MAIN----------------------------------------------------*/
 
 .carousel {
   margin:0 auto;
-  min-width:1000px;
   max-width:2000px;
   max-height: 100%;
   width: 100%;
 }
 
 .text {
-    min-width:500px;
+    
     max-width:1000px;
     text-align: center;
     margin:auto;

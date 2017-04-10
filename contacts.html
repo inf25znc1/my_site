@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="57x57" href="img/icon//apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/icon//apple-icon-72x72.png">
@@ -12,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/icon//apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/icon//apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/icon//apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/icon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icon//android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/icon//favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icon//favicon-16x16.png">
@@ -29,7 +30,7 @@
     <header>
         <nav class="nav-main">
             <div>
-                <img src="img/logo_main.jpg" alt="main logo" height="200" class="logo">
+                <img src="img/logo_main2.png" alt="main logo" height="200" class="logo">
             </div>
             <ul>
                 <li>
@@ -53,30 +54,31 @@
         <p>Залиште мені повідомлення через форму зворотнього звязку, </p>
         <p>і я зв’яжусь з Вами, як тільки зможу:</p>
         <br>
-        <div class="form">
-            <p><b>Форма зворотнього зв’язку:</b></p>
+        <div>
+            <div class="form">
+                <form method="POST" action="https://formspree.io/inferno25znc@gmail.com">
+                    <textarea name="question" placeholder="Ваше питання" id="client-question"></textarea>
+                    <br>
+                    <input type="text" name="name" placeholder="Ваше ім’я" id="client-name" required/>
+                    <br>
+                    <input type="text" name="phone" placeholder="Номер телефону" id="client-number" required/>
+                    <br>
+                    <input type="email" name="email" placeholder="E-mail" id="client-email" required/>
+                    <br>
+                    <br>
+                    <input type="submit" value="Відправити" id="btn-submit" />
+                </form>
+                <p id="message"></p>
+            </div>
             <br>
-            <form method="post" action="#">
-                <textarea name="question" placeholder="Ваше питання"></textarea>
-                <br>
-                <input type="text" name="name" placeholder="Ваше ім’я" required/>
-                <br>
-                <input type="text" name="phone" placeholder="Номер телефону" required/>
-                <br>
-                <input type="email" name="email" placeholder="E-mail" required/>
-                <br>
-                <br>
-                <input type="submit" value="Відправити" />
-            </form>
+            <p>Також Ви можете зв’язатись зі мною використовуючи наступні контактні дані,</p>
+            <p>або за посиланнями на соціальні мережі внизу сторінки:</p>
             <br>
-        <p>Також Ви можете зв’язатись зі мною використовуючи наступні контактні дані,</p>
-        <p>або за посиланнями на соціальні мережі внизу сторінки:</p>
-        <br>
-        <ul class="contacts">
-            <li><b>Номер телефону:</b> +380937444434</li>
-            <li><b>E-mail:</b> inferno25znc@gmail.com</li>
-            <li><b>Skype:</b> infeno25znc1</li>
-        </ul>
+            <ul class="contacts">
+                <li><b>Номер телефону:</b> +380937444434</li>
+                <li><b>E-mail:</b> inferno25znc@gmail.com</li>
+                <li><b>Skype:</b> infeno25znc1</li>
+            </ul>
         </div>
         </br>
     </main>
@@ -104,5 +106,8 @@
             </p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/contacts.js"></script>
 </body>
+
 </html>
