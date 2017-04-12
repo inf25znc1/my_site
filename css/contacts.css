@@ -8,6 +8,7 @@ body, html {
     min-width:320px;
     max-width:2000px;
     font:1em 'Open Sans', sans-serif;
+    height:100%;
     
 }
 h3, h2, p {
@@ -15,10 +16,9 @@ h3, h2, p {
 }
 
 /*---------------------------------HEADER-----------------------------------------*/
-.nav-main {
+.container-fluid {
     width:100%;
     background-color:#222;
-    height: 110px;
     color: #fff;
 }
 
@@ -70,6 +70,7 @@ p, h1 {
     width:100%;
     text-align: center;
     margin:auto;
+    list-style-type: none;
 }
 
 /*-----------------------------------FOOTER----------------------------------------------*/

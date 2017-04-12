@@ -22,10 +22,9 @@ p {
 
 /*---------------------------------HEADER-----------------------------------------*/
 
-.nav-main {
-    width: 100%;
-    background-color: #222;
-    height: 110px;
+.container-fluid {
+    width:100%;
+    background-color:#222;
     color: #fff;
 }
 
