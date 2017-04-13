@@ -21,19 +21,18 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/contacts.css" />
-    <title>BootStrap Sapmple</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/contacts.css" />
     <title>Контакти | Огоновський Роман | Roman Ogonovskyi</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default" id="menu">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -54,6 +53,9 @@
         </nav>
     </header>
     <main>
+        <div class="seattle">
+            <img src="img/seattle.jpg" alt="seattle">
+        </div>
         <br>
         <h1>Контакти:</h1>
         <p>Залиште мені повідомлення через форму зворотнього звязку, </p>
@@ -62,13 +64,13 @@
         <div>
             <div class="form">
                 <form method="POST" action="https://formspree.io/inferno25znc@gmail.com">
-                    <textarea name="question" placeholder="Ваше питання" id="client-question"></textarea>
+                    <textarea name="question" placeholder="Ваше питання" id="client-question" style="margin: 2px; height: 106px; width: 303px; resize: none;"></textarea>
                     <br>
-                    <input type="text" name="name" placeholder="Ваше ім’я" id="client-name" required/>
+                    <input type="text" name="name" placeholder="Ваше ім’я" id="client-name" style="margin: 2px; height: 40px; width: 303px;" required/>
                     <br>
-                    <input type="text" name="phone" placeholder="Номер телефону" id="client-number" required/>
+                    <input type="text" name="phone" placeholder="Номер телефону" id="client-number" style="margin: 2px; height: 40px; width: 303px;" required/>
                     <br>
-                    <input type="email" name="email" placeholder="E-mail" id="client-email" required/>
+                    <input type="email" name="email" placeholder="E-mail" id="client-email" style="margin: 2px; height: 40px; width: 303px;" required/>
                     <br>
                     <br>
                     <input type="submit" value="Відправити" id="btn-submit" />

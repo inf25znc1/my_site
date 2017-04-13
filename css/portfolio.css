@@ -15,6 +15,21 @@ h3, h2, p, h1 {
 }
 
 /*---------------------------------HEADER-----------------------------------------*/
+#menu {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:#fff;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover {
+    color:#E18700 !important;
+}
+
 .container-fluid {
     width:100%;
     background-color:#222;

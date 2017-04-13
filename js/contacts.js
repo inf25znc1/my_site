@@ -4,12 +4,9 @@ $(function() {
 document.querySelector('input[type=submit]').addEventListener('click', sendForm);
 
 function sendForm(e) {
-    e.preventDefault();
-    var form = document.querySelector('form');
-    if (!form[0].checkValidity()) {
-        form.find(':submit').click();
-    }
-    else {
+  var form = document.querySelector('form');
+  if (form.checkValidity()) {
+        e.preventDefault();
         $.ajax({
             url: "https://formspree.io/inferno25znc@gmail.com",
             method: "POST",
@@ -18,8 +15,6 @@ function sendForm(e) {
                 clientName: $('#client-name').val(),
                 clientNumber: $('#client-number').val(),
                 clientEmail: $('#client-email').val(),
-
-
             },
             dataType: "json"
         }).done(function() {

@@ -22,39 +22,26 @@ h3, h2, p {
     
 }
 
-.nav-main .logo {
-    float:left;
-    height:110px;
-    padding:0px 30px  
+#menu {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
 }
 
-.nav-main > ul {
-    margin:0;
-    padding:0;
-    float:right;
-    list-style-type:none;
-    min-width:600px;
-    max-width:2000px;
-}
-
-.nav-main > ul > li {
-    float: left;
-    padding: 0px 30px;
-}
-
-.nav-item {
-    display: inline-block;
-    padding: 45px 20px;
+.navbar-default .navbar-nav>li>a {
     color:#fff;
-    text-decoration:none;
 }
 
-.nav-item:hover {
-    background-color:#444;
+
+.navbar-default .navbar-nav>li>a:hover {
     color:#E18700;
 }
 .form {
     width:300px;
+}
+
+.nav navbar-nav {
+    color:#fff;
 }
 
 /*-----------------------------MAIN----------------------------------------------------*/
