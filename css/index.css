@@ -19,7 +19,12 @@ h3, h2, p {
     width:100%;
     background-color:#222;
     color: #fff;
-    
+}
+.navbar-default .navbar-brand {
+    color:#fff;
+}
+.navbar-default .navbar-brand:hover {
+    color:#E18700;
 }
 
 #menu {

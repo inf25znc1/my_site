@@ -20,6 +20,12 @@ h3, h2, p, h1 {
   min-height: 50px;
   margin-bottom: 0px;
 }
+.navbar-default .navbar-brand {
+    color:#fff;
+}
+.navbar-default .navbar-brand:hover {
+    color:#E18700;
+}
 
 .navbar-default .navbar-nav>li>a {
     color:#fff;
